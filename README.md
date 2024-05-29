@@ -25,17 +25,17 @@ const omd = require('omd');
 const arrayData = ['Jon', 'Doe'];
 console.log(omd(arrayData));
 
-| --- |
-| Jon |
-| Doe |
+// | --- |
+// | Jon |
+// | Doe |
 ```
 
 ```js
 console.log(omd(arrayData, { align: ['left'] }));
 
-| :--- |
-| Jon  |
-| Doe  |
+// | :--- |
+// | Jon  |
+// | Doe  |
 ```
 
 - __Markdown for an object with different alignments:__
@@ -48,11 +48,11 @@ const objectData = {
 
 console.log(omd(objectData, { align: ['left', 'center', 'right'] }));
 
-| Day     |   Rank  |    Grade |
-| :---    |  :---:  |   ---:   |
-| Tuesday |    7    |  C Minus |
-| Friday  |    1    |  A Plus  |
-| Dryday  |    4    |  B Minus |
+// | Day     |   Rank  |    Grade |
+// | :---    |  :---:  |   ---:   |
+// | Tuesday |    7    |  C Minus |
+// | Friday  |    1    |  A Plus  |
+// | Dryday  |    4    |  B Minus |
 ```
 
 - __Markdown for an object with single alignment:__
@@ -60,11 +60,11 @@ console.log(omd(objectData, { align: ['left', 'center', 'right'] }));
 ```js
 console.log(omd(objectData, { align: ['center'] }));
 
-|   Day   |   Rank  |  Grade   |
-| :---:   | :---:   | :---:    |
-| Tuesday |    7    |  C Minus |
-| Friday  |    1    |  A Plus  |
-| Dryday  |    4    |  B Minus |
+// |   Day   |   Rank  |  Grade   |
+// | :---:   | :---:   | :---:    |
+// | Tuesday |    7    |  C Minus |
+// | Friday  |    1    |  A Plus  |
+// | Dryday  |    4    |  B Minus |
 ```
 
 - __Markdown for a 2D array with different alignments:__
@@ -79,11 +79,11 @@ const twoDArrayData = [
 
 console.log(omd(twoDArrayData, { align: ['center', 'left', 'right'] }));
 
-|   name  | class | number |
-| :---:   | :---  |  ---:  |
-|   Jon   |  7    |     99 |
-|   Ron   |  13   |    233 |
-|  Akon   |  12   |     13 |
+// |   name  | class | number |
+// | :---:   | :---  |  ---:  |
+// |   Jon   |  7    |     99 |
+// |   Ron   |  13   |    233 |
+// |  Akon   |  12   |     13 |
 ```
 
 - Markdown for a 2D array with single alignment:
@@ -91,11 +91,11 @@ console.log(omd(twoDArrayData, { align: ['center', 'left', 'right'] }));
 ```js
 console.log(omd(twoDArrayData, { align: ['center'] }));
 
-|  name  | class | number |
-| :---:  | :---: | :---:  |
-|  Jon   |   7   |   99   |
-|  Ron   |  13   |  233   |
-| Akon   |  12   |   13   |
+// |  name  | class | number |
+// | :---:  | :---: | :---:  |
+// |  Jon   |   7   |   99   |
+// |  Ron   |  13   |  233   |
+// | Akon   |  12   |   13   |
 ```
 
 # Contributing
