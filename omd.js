@@ -1,5 +1,22 @@
+const toMarkdownTable = (data, options = {}) => {
+    if (Array.isArray(data)) {
+        if (Array.isArray(data[0])) {
+            return twoDArrayToMarkdownTable(data, options);
+        } else {
+            return arrayToMarkdownTable(data, options);
+        }
+    } else if (typeof data === 'object' && data !== null) {
+        return objectToMarkdownTable(data, options);
+    } else {
+        throw new Error('Unsupported data format.');
+    }
+};
+
 const arrayToMarkdownTable = (array, options = {}) => {
-    return array.map(item => `| ${item} |`).join('\n');
+    const alignments = normalizeAlignments(options.align, 1);
+    const separatorRow = `| ${getAlignmentSeparator(alignments[0])} |`;
+    const tableRows = array.map(item => `| ${item} |`).join('\n');
+    return `${separatorRow}\n${tableRows}`;
 };
 
 const objectToMarkdownTable = (obj, options = {}) => {
@@ -45,8 +62,4 @@ const normalizeAlignments = (align, length) => {
     return align;
 };
 
-module.exports = {
-    arrayToMarkdownTable,
-    objectToMarkdownTable,
-    twoDArrayToMarkdownTable,
-};
+module.exports = toMarkdownTable;
