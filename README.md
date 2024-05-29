@@ -2,6 +2,13 @@
 
 :feather: :feet: Convert arrays and objects to Markdown tables.
 
+
+## Install
+
+```
+npm install ohmd
+```
+
 ## API
 
 ### `omd(data, options)`
