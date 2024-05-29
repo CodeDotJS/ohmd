@@ -1,0 +1,30 @@
+{
+  "name": "omd",
+  "version": "1.0.0",
+  "description": "Convert arrays and objects to Markdown tables.",
+  "main": "omd.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeDotJS/omd.git"
+  },
+  "keywords": [
+    "markdown",
+    "table",
+    "convert",
+    "api",
+    "array",
+    "objects"
+  ],
+  "author": "Rishi Giri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeDotJS/omd/issues"
+  },
+  "homepage": "https://github.com/CodeDotJS/omd#readme"
+}
