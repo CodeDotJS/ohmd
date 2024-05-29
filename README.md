@@ -27,7 +27,7 @@ npm install ohmd
 - __Markdown for a single array:__
 
 ```js
-const omd = require('omd');
+const omd = require('ohmd');
 
 const arrayData = ['Jon', 'Doe'];
 console.log(omd(arrayData));
