@@ -98,9 +98,6 @@ console.log(omd(twoDArrayData, { align: ['center'] }));
 | Akon   |  12   |   13   |
 ```
 
-# Contributing
-Contributions are welcome! If you find any bugs or have suggestions for improvements, please feel free to submit a pull request or open an issue.
-
 # License
 
 [MIT](LICENSE)
