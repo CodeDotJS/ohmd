@@ -1,5 +1,5 @@
 {
-  "name": "omd",
+  "name": "ohmd",
   "version": "1.0.0",
   "description": "Convert arrays and objects to Markdown tables.",
   "main": "omd.js",
