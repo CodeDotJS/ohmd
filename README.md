@@ -24,11 +24,11 @@ const omd = require('omd');
 
 const arrayData = ['Jon', 'Doe'];
 console.log(omd(arrayData));
-```
 
 | --- |
 | Jon |
 | Doe |
+```
 
 ```js
 console.log(omd(arrayData, { align: ['left'] }));
@@ -97,6 +97,9 @@ console.log(omd(twoDArrayData, { align: ['center'] }));
 |  Ron   |  13   |  233   |
 | Akon   |  12   |   13   |
 ```
+
+# Contributing
+If you find any bugs or have suggestions for improvements, please feel free to submit a pull request or open an issue.
 
 # License
 
