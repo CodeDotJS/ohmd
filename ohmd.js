@@ -1,4 +1,6 @@
-const arrayToMarkdownTable = (array, options = {}) => `| ${array.join(' | ')} |`;
+const arrayToMarkdownTable = (array, options = {}) => {
+    return array.map(item => `| ${item} |`).join('\n');
+};
 
 const objectToMarkdownTable = (obj, options = {}) => {
     const { header, table } = obj;
