@@ -24,11 +24,11 @@ const omd = require('omd');
 
 const arrayData = ['Jon', 'Doe'];
 console.log(omd(arrayData));
+```
 
 | --- |
 | Jon |
 | Doe |
-```
 
 ```js
 console.log(omd(arrayData, { align: ['left'] }));
