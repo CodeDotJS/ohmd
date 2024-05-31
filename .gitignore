@@ -131,3 +131,4 @@ dist
 
 # generator
 web/toMarkdownTable.js
+web/package-lock.json
