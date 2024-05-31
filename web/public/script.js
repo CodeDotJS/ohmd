@@ -9,7 +9,7 @@ document.getElementById('convert-button').addEventListener('click', () => {
         return;
     }
 
-    fetch('/markdown-table', {
+    fetch('/api/convert', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
