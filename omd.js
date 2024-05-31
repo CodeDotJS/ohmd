@@ -21,17 +21,21 @@ const arrayToMarkdownTable = (array, options = {}) => {
 
 const objectToMarkdownTable = (obj, options = {}) => {
     const { header, table } = obj;
-    if (!Array.isArray(header) || !Array.isArray(table)) {
-        throw new Error('Invalid object format. Ensure "header" and "table" are arrays.');
+    const hasHeader = Array.isArray(header) && header.length > 0;
+    const alignments = normalizeAlignments(options.align, hasHeader ? header.length : 0);
+
+    let headerRow = '';
+    let separatorRow = '';
+    if (hasHeader) {
+        headerRow = `| ${header.join(' | ')} |\n`;
+        separatorRow = `| ${header.map((_, index) => getAlignmentSeparator(alignments[index])).join(' | ')} |\n`;
     }
 
-    const alignments = normalizeAlignments(options.align, header.length);
-    const headerRow = `| ${header.join(' | ')} |`;
-    const separatorRow = `| ${header.map((_, index) => getAlignmentSeparator(alignments[index])).join(' | ')} |`;
-    const tableRows = table.map(row => `| ${row.join(' | ')} |`).join('\n');
+    const tableRows = table.map(row => `| ${row.join(' | ')} |\n`).join('');
 
-    return `${headerRow}\n${separatorRow}\n${tableRows}`;
+    return `${headerRow}${separatorRow}${tableRows}`;
 };
+
 
 const twoDArrayToMarkdownTable = (array, options = {}) => {
     const header = array[0] || [];
