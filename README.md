@@ -62,6 +62,22 @@ console.log(omd(objectData, { align: ['left', 'center', 'right'] }));
 // | Dryday  |    4    |  B Minus |
 ```
 
+- __Markdown for an object with no header:__
+
+```js
+const objectWithoutHeader = {
+    "table": [
+        ["Alice", 30, "New York"],
+        ["Bob", 25, "San Francisco"],
+        ["Charlie", 35, "Los Angeles"]
+    ]
+}
+
+// | Alice   | 30 | New York      |
+// | Bob     | 25 | San Francisco |
+// | Charlie | 35 | Los Angeles   |
+```
+
 - __Markdown for an object with single alignment:__
 
 ```js
@@ -93,7 +109,7 @@ console.log(omd(twoDArrayData, { align: ['center', 'left', 'right'] }));
 // |  Akon   |  12   |     13 |
 ```
 
-- Markdown for a 2D array with single alignment:
+- __Markdown for a 2D array with single alignment:__
 
 ```js
 console.log(omd(twoDArrayData, { align: ['center'] }));
