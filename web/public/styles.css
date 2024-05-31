@@ -130,3 +130,29 @@ pre {
     background-color: #66cc66;
     color: #ffffff;
 }
+
+@media (max-width: 500px) {
+	.container {
+		max-width: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.input-output {
+		flex-direction: column;
+	}
+
+	h1 img {
+		width: 100px;
+	}
+
+	.details > p {
+		font-size: smaller;
+	}
+
+	pre {
+		width: 97%;
+	}
+}
