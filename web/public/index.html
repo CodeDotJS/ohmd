@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>OMD 🐾 Convert arrays and objects to Markdown tables</title>
+        <meta name="description" content="🐾 Convert arrays and objects to Markdown tables">
+        <link rel="shortcut icon" href="images/1F408.svg">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="apple-mobile-web-app-title" content="Oh My Markdown!">
+        <meta name="application-name" content="Oh My Markdown!">
+        <meta name="theme-color" content="#ffffff">
+        <meta property="og:title" content="Convert arrays and objects to Markdown tables">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="OMD">
+        <meta property="og:url" content="https://omd.vercel.app">
+        <meta property="og:image" content="images/text1048.png">
+        <meta property="og:image:alt" content="Convert arrays and objects to Markdown tables.">
+        <meta property="og:description" content="Convert arrays and objects to Markdown tables">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+<body>
+    <div class="container">
+        <div class="details">
+            <h1><img src="images/text148.png" alt=""></h1>
+            <p>🐾 Convert arrays and objects to Markdown tables.</p>
+        </div>
+        <br>
+        <div class="example-select">
+            <select id="example-dropdown">
+                <option value="">Select an example...</option>
+                <option value="snippet1">Simple Object with Headers and Data Rows</option>
+                <option value="snippet2">Object with Alignment Options</option>
+                <option value="snippet3">Two-Dimensional Array</option>
+                <option value="snippet4">Simple Array</option>
+                <option value="snippet5">More Complex Object with Different Data Types</option>
+                <option value="snippet6">Nested Data with Mixed Types</option>
+                <option value="snippet7">Simple Data with No Headers</option>
+                <option value="snippet8">Array with Mixed Content</option>
+            </select>
+        </div>
+        <div class="input-output">
+            <div class="input-area">
+                <textarea id="input-data" placeholder='Enter data here...'></textarea>
+                <button id="convert-button"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="output-area">
+                <pre id="output-markdown"></pre>
+                <button id="copy-button"><i class="far fa-copy"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="message-container"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
